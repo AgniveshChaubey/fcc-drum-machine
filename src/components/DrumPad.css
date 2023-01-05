@@ -1,0 +1,14 @@
+.container{
+    /* max-width: ; */
+    margin-top: 25vh;
+    /* background: #000; */
+}
+.container .row .col-lg-4{
+    /* max-width: 50%; */
+}
+
+#activeKey{
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center; */
+}
