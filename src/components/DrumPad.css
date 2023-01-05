@@ -1,14 +1,79 @@
-.container{
+.container {
     /* max-width: ; */
     margin-top: 25vh;
     /* background: #000; */
 }
-.container .row .col-lg-4{
+
+.container .row .col-lg-4 {
     /* max-width: 50%; */
 }
 
-#activeKey{
+#activeKey {
     align-items: center;
     justify-content: center;
-    /* justify-items: center; */
+}
+
+button {
+    background-color: rgb(42, 186, 223);
+    border-radius: 15%;
+    border-width: 1px;
+    border-color: black;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+button:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    /* width: 200px;
+    font-size: 16px;
+    font-weight: 600; */
+    /* color: #fff; */
+    cursor: pointer;
+    /* margin: 20px;
+    height: 55px; */
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #2eb2eb, #24f068, #ddac30, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(16, 206, 199, 0.75);
 }

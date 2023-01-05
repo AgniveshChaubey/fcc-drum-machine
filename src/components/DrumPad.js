@@ -19,18 +19,21 @@ const DrumPad = () => {
     };
 
     return (
-        <div id='drum-machine' className='container'>
-            <div id="display" className='row'>
+        <div id='drum-machine' className='container' style={{ maxWidth: '550px' }}>
+            <div id="display" className='row' >
                 {
                     drumpads.map(drumpad => (
+                        
                         <button
-                        onFocus={false}
+                            style={{ margin: '2px auto',
+                            maxWidth : '33%'
+                            }}
                             onClick={() => {
                                 playSound(drumpad.text)
                             }}
                             key={drumpad.text}
                             id={drumpad.src}
-                            className='drum-pad col col-md-4 col-lg-4 text-center border'
+                            className='buttons btn-hover color-1 drum-pad col-4 col-md-4 text-center pt-5 pb-5'
                         >
                             {drumpad.text}
                             <audio src={drumpad.src} id={drumpad.text} className='clip'></audio>
