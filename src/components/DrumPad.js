@@ -19,8 +19,11 @@ const DrumPad = () => {
     };
 
     return (
+    <>
+        <div className="header" style={{backgroundColor : '#31a5d6'}}><h2 className='p-2'>Drum Machine</h2></div>
         <div id='drum-machine' className='container' style={{ maxWidth: '550px' }}>
-            <div id="display" className='row' >
+            <div id="display" className='row text-center' >
+            <h3 id='activeKey' className='col-12 col-md-12 text-center mb-2' style={{backgroundColor : ''}}>{`You pressed: ${pressedKey}`}</h3>
                 {
                     drumpads.map(drumpad => (
                         
@@ -40,9 +43,9 @@ const DrumPad = () => {
                         </button>
                     ))
                 }
-                <h5 id='activeKey' className='text-center mt-2'>{pressedKey}</h5>
             </div>
         </div>
+        </>
     )
 }
 

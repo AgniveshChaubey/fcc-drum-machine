@@ -1,6 +1,6 @@
 .container {
     /* max-width: ; */
-    margin-top: 25vh;
+    margin-top: 15vh;
     /* background: #000; */
 }
 
@@ -74,6 +74,6 @@ button:hover {
 }
 
 .btn-hover.color-1 {
-    background-image: linear-gradient(to right, #2eb2eb, #24f068, #ddac30, #2bb673);
+    background-image: linear-gradient(to right, #31a5d6, #24f068, #ddac30, #2bb673);
     box-shadow: 0 4px 15px 0 rgba(16, 206, 199, 0.75);
 }
